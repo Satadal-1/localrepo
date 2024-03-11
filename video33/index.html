@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3 multi color nav bar</title>
+    <style>
+      :root {
+        --color: rgb(151, 151, 215);
+        --seccolor: rgb(133, 185, 133);
+        
+        
+      }
+      .nav ul {
+        display: flex;
+        background-color: bisque;
+      }
+      ul li {
+        list-style: none;
+        margin: 5px;
+        padding: 5px;
+        border: 0.5px solid black;
+        border-radius: 15px;
+        background-color: var(--color);
+        cursor: pointer;
+        color: red;
+      }
+      ul li:hover{
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Description</li>
+        <li>Address</li>
+      </ul>
+    </div>
+  </body>
+</html>
