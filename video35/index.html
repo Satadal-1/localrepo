@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New CSS Selectors</title>
+    <style>
+      .card:first-child {
+        background-color: antiquewhite;
+      }
+      /*.card::first-line{
+color: blue;
+        }*/
+      div > p {
+        color: red;
+      }
+      div p::first-letter {
+        font-size: 32px;
+        font-style: italic;
+        color: yellow;
+      }
+      .cards * {
+        border: 2px solid black;
+      }
+      [satu="12"] {
+        color: green;
+      }
+      .card:nth-child(even) {
+        color: purple;
+      }
+      .card:nth-last-child(1) {
+        color: blue;
+      }
+      .cards::before{
+        content: "Satadal is good";
+      }
+      .cards::after{
+        content: "Sigma Web Development Course is also good";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">
+        Hi I am a card
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          ipsam eveniet consequatur aliquam harum fugiat perferendis odio
+          aliquid molestias fugit. Explicabo, aut exercitationem? Dolores at
+          quia laudantium veritatis unde aspernatur veniam provident corrupti
+          sed?
+        </p>
+      </div>
+      <div satu="12" class="card">Hi I am a card</div>
+      <div class="card">Hi I am a card</div>
+      <div class="card">Hi I am a card</div>
+      <div class="card">Hi I am a card</div>
+    </div>
+  </body>
+</html>
