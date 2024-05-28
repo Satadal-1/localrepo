@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 84px;
+    margin-top: 20px;
+  }
+  .logo img {
+    height: 52px;
+  }
+  nav div ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  ul li img {
+    width: 20px;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin: 76px;
+    font-family: sans-serif;
+  }
+  .first span {
+    font-size: 48px;
+  }
+  .first span img {
+    padding: 0 10px;
+  }
+  .word {
+    font-size: 25px;
+    width: 75vw;
+    text-align: center;
+    font-weight: lighter;
+  }
+  div button {
+    background-color:#00b6d1;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .downlode{
+
+  }
+  .small{
+    font-size: 12px;
+  }
+  
