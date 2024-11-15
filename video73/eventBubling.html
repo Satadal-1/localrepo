@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubling</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .childContainer{
+            background-color: aqua;
+            margin: 14px;
+            padding: 14px;
+            border-radius: 20px;
+        }
+        .container{
+            background-color: blanchedalmond;
+            margin: 14px;
+            padding: 14px;
+            border-radius: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="childContainer">
+        <div class="child">Hey I am a box</div>
+      </section>
+    </div>
+    <script>
+      document.querySelector(".child").addEventListener("click", () => {
+        alert("The Child is clicked");
+      });
+
+      document.querySelector(".childContainer").addEventListener("click", () => {
+        alert("The childConteiner is clicked");
+      });
+      document.querySelector(".container").addEventListener("click", () => {
+        alert("The container is clicked");
+      });
+      function getRandomColor(){
+    let ran1 = Math.ceil( 0 + Math.random()*255 )
+    let ran2 = Math.ceil( 0 + Math.random()*255 )
+    let ran3 = Math.ceil( 0 + Math.random()*255 )
+    return `rgb(${ran1} , ${ran2} ,${ran3})`
+}
+    //   let a = setInterval(() => {
+    //     document.querySelector(".childContainer").style.background = getRandomColor();
+    //   }, 1000);
+    //   console.log(a);
+    //use clearInterval function to remove it
+    let a = setTimeout(() => {
+        document.querySelector(".childContainer").style.background = getRandomColor();
+      }, 5000);
+      console.log(a);
+      // use clearTimeout to remove it
+    </script>
+  </body>
+</html>
